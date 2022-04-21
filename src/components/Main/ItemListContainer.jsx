@@ -2,9 +2,9 @@ import React from "react";
 
 function Container(props) {
     return (
-    <div>
+    <main>
     <h2 style={{backgroundColor : "green",color: "white",textAlign: "center"}}> {props.title} </h2>
-    </div>
+    </main>
     );
     }
     Container.defaultProps ={
