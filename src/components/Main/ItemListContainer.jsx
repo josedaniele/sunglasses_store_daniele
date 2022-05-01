@@ -49,7 +49,7 @@ function ItemListContainer(props) {
               +
             </button>
           </div>
-          <div className="input-group-prepend" style={{ marginTop: "10px" }}>
+          <div className="col-md-12 input-group-prepend" style={{ marginTop: "10px" }}>
             <button
               className="btn btn-outline-danger"
               type="button"
