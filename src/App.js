@@ -5,7 +5,7 @@ function App() {
   return (
     <div>
       <Navbar />
-      <ItemListContainer init={1} stock={15} onAdd={"Añadido al carrito"} />
+      <ItemListContainer/>
     </div>
   );
 }
