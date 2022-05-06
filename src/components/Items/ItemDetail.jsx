@@ -1,6 +1,6 @@
 import React from "react";
 
-function ItemDetail({ item }) {
+export function ItemDetail({ item }) {
   return (
     <>
       {item.length > 0 ? (
@@ -38,4 +38,3 @@ function ItemDetail({ item }) {
   );
 }
 
-export default ItemDetail;

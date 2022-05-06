@@ -1,4 +1,4 @@
-import {useParams, useState} from 'react'
+import {useParams, useState,useEffect} from 'react'
 
 import { producto } from '../Items/ItemList';
 
