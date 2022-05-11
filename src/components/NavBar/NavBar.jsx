@@ -1,13 +1,14 @@
 import React from "react";
+import { NavLink, Link } from "react-router-dom";
 import CartWidget from "../CartWidget/CartWidget";
 
 const Navbar = () => {
   return (
     <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
       <div className="container-fluid">
-        <a className="navbar-brand" href="#">
+        <Link className="navbar-brand" to ={"/"}>
           SunGlassesD
-        </a>
+        </Link>
         <button
           className="navbar-toggler"
           type="button"
@@ -22,9 +23,9 @@ const Navbar = () => {
         <div className="collapse navbar-collapse" id="navbarSupportedContent">
           <ul className="navbar-nav me-auto mb-2 mb-lg-0">
             <li className="nav-item">
-              <a className="nav-link active" aria-current="page" href="#">
+              <NavLink className="nav-link active" aria-current="page" to={"/"}>
                 Inicio
-              </a>
+              </NavLink>
             </li>
             <li className="nav-item">
               <a className="nav-link" href="#">
@@ -59,7 +60,7 @@ const Navbar = () => {
               </ul>
             </li>
             <li className="nav-item">
-              <a className="nav-link">Contacto</a>
+              <NavLink className="nav-link" to="/Contacto">Contacto</NavLink>
             </li>
           </ul>
           <CartWidget />

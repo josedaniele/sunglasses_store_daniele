@@ -1,13 +1,15 @@
-import {useParams, useState,useEffect} from 'react'
-
+import {useState,useEffect} from 'react';
+import { useParams } from 'react-router-dom';
 import { producto } from '../Items/ItemList';
+import ItemDetail from '../Items/ItemDetail';
+import Charging from '../Charging';
 
 
 
 function ItemDetailContainer() {
   
   const{id} = useParams();
-  const [item, setItem] = useState(null);
+  const [lente, setLente] = useState(null);
 
   const filter = producto.find((prod) => prod.id === Number(id));
   useEffect(() => {
@@ -15,26 +17,25 @@ function ItemDetailContainer() {
       setTimeout(() => {
         resolve(filter);
       }, 2000);
-    });
-
-    promesa
+      
+      promesa
       .then(
         (res) => {
-          setItem(res);
+          setLente(res);
         },
         (err) => {
           console.log("Error,producto no encontrado", err);
         }
       )
-      .then(() => console.log(item))
+      .then(() => console.log(lente))
       .catch((err) => console.log(err));
-      
+    });
 
-    return () => {};
+
   }, []);
     return (
         <div>
-    <ItemDetail item={item}/>
+    {lente ? <ItemDetail lente={lente}/> : <Charging/>}
     </div>
   )
 }

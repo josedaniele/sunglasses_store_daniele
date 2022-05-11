@@ -1,11 +1,9 @@
-import Navbar from "./components/NavBar/NavBar";
-import ItemListContainer from "./components/Main/ItemListContainer";
+import Ruta from "./routes/Ruta";
 
 function App() {
   return (
     <div>
-      <Navbar />
-      <ItemListContainer/>
+      <Ruta/>
     </div>
   );
 }

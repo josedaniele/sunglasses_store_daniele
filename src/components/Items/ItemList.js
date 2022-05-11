@@ -23,6 +23,30 @@
       stock: 3,
       img: "https://stylewatch.vtexassets.com/arquivos/ids/172245-500-auto?v=637254016919200000&width=500&height=auto&aspect=true",
     },
+    {
+      id: 4,
+      name: "Oakley",
+      description: "Lentes Oakley de hombre Frogskins Lite Matte Black y Prizm Grey",
+      price: "1000",
+      stock: 14,
+      img: "https://stylewatch.vtexassets.com/arquivos/ids/213081-800-auto?width=800&height=auto&aspect=true",
+    },
+    {
+      id: 5,
+      name: "Armani",
+      description:"Lentes Armani Exchange Unisex Negro y Gris degradado Polarizado",
+      price: "1500",
+      stock: 1,
+      img: "https://stylewatch.vtexassets.com/arquivos/ids/210639-800-auto?width=800&height=auto&aspect=true",
+    },
+    {
+      id: 6,
+      name: "Versace",
+      price: "1200",
+      description: "Lentes Versace de Mujer Transparentes Violeta degradado",
+      stock: 2,
+      img: "https://stylewatch.vtexassets.com/arquivos/ids/207232-800-auto?width=800&height=auto&aspect=true",
+    },
   ];
 
 
