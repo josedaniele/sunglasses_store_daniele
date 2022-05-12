@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
-import { Item } from "../Items/Item";
-import {producto} from"../Items/ItemList";
+import  {ItemList}  from "../Items/ItemList";
+import {producto} from "../Items/Producto";
 
 
 
@@ -10,7 +10,7 @@ function ItemListContainer() {
     const promesa = new Promise((resolve, reject) => {
       setTimeout(() => {
         resolve(producto);
-      }, 2000);
+      }, 500);
     });
 
     promesa
@@ -30,8 +30,10 @@ function ItemListContainer() {
   }, []);
 
   return (
-    <div style={{display:"flex", justifyContent:"space-around",marginTop:"30px"}}>
-      <Item lentes={lentes} />
+    <div className="row" >
+    
+      <ItemList lentes={lentes} />
+      
       </div>
   );
 }
