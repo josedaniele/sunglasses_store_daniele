@@ -23,15 +23,11 @@ const Navbar = () => {
         <div className="collapse navbar-collapse" id="navbarSupportedContent">
           <ul className="navbar-nav me-auto mb-2 mb-lg-0">
             <li className="nav-item">
-              <NavLink className="nav-link active" aria-current="page" to={"/"}>
+              <NavLink className="nav-link" aria-current="page" to={"/"}>
                 Inicio
               </NavLink>
             </li>
-            <li className="nav-item">
-              <a className="nav-link" href="#">
-                Productos
-              </a>
-            </li>
+
             <li className="nav-item dropdown">
               <a
                 className="nav-link dropdown-toggle"
@@ -41,21 +37,29 @@ const Navbar = () => {
                 data-bs-toggle="dropdown"
                 aria-expanded="false"
               >
-                Asesoramiento
+                Lentes
               </a>
               <ul className="dropdown-menu" aria-labelledby="navbarDropdown">
                 <li>
-                  <a className="dropdown-item" href="#">
-                    Cuidado de nuestros productos
-                  </a>
+                  <NavLink  className="dropdown-item" to="/Lentes/categoria/3">
+                    Mujer
+                  </NavLink>
                 </li>
                 <li>
                   <hr className="dropdown-divider" />
                 </li>
                 <li>
-                  <a className="dropdown-item" href="#">
-                    Preguntas frecuentes
-                  </a>
+                  <NavLink className="dropdown-item" to="/Lentes/categoria/1">
+                    Hombre
+                  </NavLink>
+                </li>
+                <li>
+                  <hr className="dropdown-divider" />
+                </li>
+                <li>
+                  <NavLink className="dropdown-item" to="/Lentes/categoria/2">
+                    Unisex
+                  </NavLink>
                 </li>
               </ul>
             </li>

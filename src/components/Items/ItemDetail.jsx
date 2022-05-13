@@ -1,7 +1,14 @@
-import React from "react";
+import React, { useState } from "react";
+import ItemCount from "./ItemCount";
 
 
-const lentesDetail = ({ lentes }) => {
+const ItemDetail = ({ lentes }) => {
+  
+  
+const OnAdd =(event) =>{
+    
+    
+  }
   return (
     <div>
     <h2 style={{ fontSize:"50px",fontWeight:"200"}}>{lentes.name}</h2>
@@ -16,15 +23,12 @@ const lentesDetail = ({ lentes }) => {
         Precio: <br />${lentes.price}
       </h4>
       <h5 >Stock Disponible: {lentes.stock}</h5>
-
-      <a href="#" className="btn btn-dark btn-lg">
-        Comprar
-      </a>
       </div>
+      <ItemCount lentes={lentes} handleOnAdd = {OnAdd}/>
     </div>
   </div>
 
   )
 };
 
-export default lentesDetail;
+export default ItemDetail;
