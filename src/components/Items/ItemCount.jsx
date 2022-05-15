@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 
-function ItemCount({lentes}) {
+function ItemCount({lentes, onAdd}) {
   
   
     const [count, setCount] = useState(1);
@@ -16,6 +16,7 @@ function ItemCount({lentes}) {
   };
   const handleOnAdd = (e) => {
     console.log("Usted a agregado",count ,"lentes");
+    e.onAdd.console.log(count)
   };
 
   return (
