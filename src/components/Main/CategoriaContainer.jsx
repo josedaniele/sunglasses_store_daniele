@@ -7,7 +7,7 @@ import Charging from '../Charging';
 function CategoriaContainer() {
   
     const{categoria} = useParams();
-    const [lentes, setLentes] = useState([]);
+    const [lentes, setLentes] = useState(null);
   
     const filter = producto.filter((prod) => prod.categoria===String(categoria));
     useEffect(() => {
@@ -31,10 +31,9 @@ function CategoriaContainer() {
    
        return () => {};
   
-  
     }, []);
       return (
-          <div>
+          <div className="row">
       {lentes ? <ItemList lentes={lentes}/> : (<Charging/>)}
       </div>
     )

@@ -9,8 +9,8 @@ export const ItemList = ({ lentes }) => {
         lentes.map((lente) => (
           <>
             <Item
-              key ={lente.id}
-              categoria ={lente.categoria}
+              key={lente.id}
+              categoria={lente.categoria}
               id={lente.id}
               name1={lente.name}
               description={lente.description}

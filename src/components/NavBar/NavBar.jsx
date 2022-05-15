@@ -6,7 +6,7 @@ const Navbar = () => {
   return (
     <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
       <div className="container-fluid">
-        <Link className="navbar-brand" to ={"/"}>
+        <Link className="navbar-brand" to={"/"}>
           SunGlassesD
         </Link>
         <button
@@ -41,7 +41,10 @@ const Navbar = () => {
               </a>
               <ul className="dropdown-menu" aria-labelledby="navbarDropdown">
                 <li>
-                  <NavLink  className="dropdown-item" to="/Lentes/categoria/mujer">
+                  <NavLink
+                    className="dropdown-item"
+                    to="/Lentes/categoria/mujer"
+                  >
                     Mujer
                   </NavLink>
                 </li>
@@ -49,7 +52,10 @@ const Navbar = () => {
                   <hr className="dropdown-divider" />
                 </li>
                 <li>
-                  <NavLink className="dropdown-item" to="/Lentes/categoria/hombre">
+                  <NavLink
+                    className="dropdown-item"
+                    to="/Lentes/categoria/hombre"
+                  >
                     Hombre
                   </NavLink>
                 </li>
@@ -57,14 +63,19 @@ const Navbar = () => {
                   <hr className="dropdown-divider" />
                 </li>
                 <li>
-                  <NavLink className="dropdown-item" to="/Lentes/categoria/unisex">
+                  <NavLink
+                    className="dropdown-item"
+                    to="/Lentes/categoria/unisex"
+                  >
                     Unisex
                   </NavLink>
                 </li>
               </ul>
             </li>
             <li className="nav-item">
-              <NavLink className="nav-link" to="/Contacto">Contacto</NavLink>
+              <NavLink className="nav-link" to="/Contacto">
+                Contacto
+              </NavLink>
             </li>
           </ul>
           <CartWidget />

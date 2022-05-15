@@ -1,11 +1,8 @@
 import { useEffect, useState } from "react";
-import  {ItemList}  from "../Items/ItemList";
-import {producto} from "../Items/Producto";
-
-
+import { ItemList } from "../Items/ItemList";
+import { producto } from "../Items/Producto";
 
 function ItemListContainer() {
-
   const [lentes, setLentes] = useState([]);
   useEffect(() => {
     const promesa = new Promise((resolve, reject) => {
@@ -25,18 +22,14 @@ function ItemListContainer() {
       )
       .then(() => console.log(producto))
       .catch((err) => console.log(err));
-      
 
     return () => {};
   }, []);
 
   return (
-    <div className="row" >
-    
+    <div className="row">
       <ItemList lentes={lentes} />
-      
-      
-      </div>
+    </div>
   );
 }
 export default ItemListContainer;

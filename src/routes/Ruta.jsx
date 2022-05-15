@@ -18,7 +18,6 @@ const Ruta = () => {
           <Route path="/Contacto" element= {<Contacto/>}/>
           <Route path="*" element={<Error/>}/> 
           </Route>
-          
       </Routes>
     </BrowserRouter>
     </>

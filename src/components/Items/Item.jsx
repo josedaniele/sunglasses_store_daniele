@@ -1,12 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
-const Item = ({
-  name1,
-  img,
-  price,
-  id,
-}) => {
+const Item = ({ name1, img, price, id }) => {
   return (
     <div className="col-md-4">
       <div
