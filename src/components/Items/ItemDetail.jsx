@@ -4,10 +4,10 @@ import ItemCount from "./ItemCount";
 
 const ItemDetail = ({ lentes }) => {
   
-  
-const OnAdd =(event) =>{
+ const [count, setCount] = useState(null)
+const onAdd =(event) =>{
     
-    
+    event.console.log(count)
   }
   return (
     <div>
@@ -24,7 +24,7 @@ const OnAdd =(event) =>{
       </h4>
       <h5 >Stock Disponible: {lentes.stock}</h5>
       </div>
-      <ItemCount lentes={lentes} handleOnAdd = {OnAdd}/>
+      <ItemCount lentes={lentes} onAdd={onAdd}  />
     </div>
   </div>
 

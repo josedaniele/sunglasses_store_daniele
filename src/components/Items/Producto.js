@@ -3,7 +3,7 @@
   export const producto = [
     {
       id: 1,
-      categoria : 1,
+      categoria :"hombre",
       name: "Ray-Ban Aviator",
       description: "Ray-Ban Aviator clásicos lentes de sol que fueron diseñados originalmente para los aviadores de Estados Unidos en 1937. Son un modelo atemporal que combina una excepcional calidad, rendimiento y comodidad. Con un marco dorado clásico, puede ver el mundo a través de una variedad de colores de lentes que incluyen marrón cristal, verde cristal, polarizado G-15 y más, que brindan una claridad visual óptima y una protección UV del 100%.",
       price: "500",
@@ -12,7 +12,7 @@
     },
     {
       id: 2,
-      categoria : 1,
+      categoria : "hombre",
       name: "Rusty",
       description:"Lentes de Sol Rusty The Maker Mblk/Revo Red para hombre",
       price: "300",
@@ -21,7 +21,7 @@
     },
     {
       id: 3,
-      categoria : 1,
+      categoria : "hombre",
       name: "Vulk",
       description:"Lentes de Sol Vulk The Guardian MBlk S10 (RT109081) Cuadrado Urbano",
       price: "700",
@@ -30,7 +30,7 @@
     },
     {
       id: 4,
-      categoria : 1,
+      categoria : "hombre",
       name: "Oakley",
       description: "Lentes Oakley de hombre Frogskins Lite Matte Black y Prizm Grey",
       price: "1000",
@@ -39,7 +39,7 @@
     },
     {
       id: 5,
-      categoria : 2,
+      categoria : "unisex",
       name: "Armani",
       description:"Lentes Armani Exchange Unisex Negro y Gris degradado Polarizado",
       price: "1500",
@@ -48,7 +48,7 @@
     },
     {
       id: 6,
-      categoria: 3,
+      categoria: "mujer",
       name: "Versace",
       price: "1200",
       description: "Lentes Versace de Mujer Transparentes Violeta degradado",

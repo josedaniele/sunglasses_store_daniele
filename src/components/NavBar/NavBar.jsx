@@ -41,7 +41,7 @@ const Navbar = () => {
               </a>
               <ul className="dropdown-menu" aria-labelledby="navbarDropdown">
                 <li>
-                  <NavLink  className="dropdown-item" to="/Lentes/categoria/3">
+                  <NavLink  className="dropdown-item" to="/Lentes/categoria/mujer">
                     Mujer
                   </NavLink>
                 </li>
@@ -49,7 +49,7 @@ const Navbar = () => {
                   <hr className="dropdown-divider" />
                 </li>
                 <li>
-                  <NavLink className="dropdown-item" to="/Lentes/categoria/1">
+                  <NavLink className="dropdown-item" to="/Lentes/categoria/hombre">
                     Hombre
                   </NavLink>
                 </li>
@@ -57,7 +57,7 @@ const Navbar = () => {
                   <hr className="dropdown-divider" />
                 </li>
                 <li>
-                  <NavLink className="dropdown-item" to="/Lentes/categoria/2">
+                  <NavLink className="dropdown-item" to="/Lentes/categoria/unisex">
                     Unisex
                   </NavLink>
                 </li>

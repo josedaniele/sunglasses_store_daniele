@@ -7,9 +7,9 @@ import Charging from '../Charging';
 function CategoriaContainer() {
   
     const{categoria} = useParams();
-    const [lentes, setLentes] = useState(null);
+    const [lentes, setLentes] = useState([]);
   
-    const filter = producto.find((prod) => prod.categoria===Number(categoria));
+    const filter = producto.filter((prod) => prod.categoria===String(categoria));
     useEffect(() => {
       const promesa = new Promise((resolve, reject) => {
         setTimeout(() => {
@@ -25,7 +25,7 @@ function CategoriaContainer() {
              console.log("Error,producto no encontrado", err);
            }
          )
-         .then(() => console.log(producto))
+         .then(() => console.log(filter))
          .catch((err) => console.log(err));
          
    

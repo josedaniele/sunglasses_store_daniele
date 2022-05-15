@@ -28,7 +28,7 @@ function ItemDetailContainer() {
            console.log("Error,producto no encontrado", err);
          }
        )
-       .then(() => console.log(producto))
+       .then(() => console.log(filter))
        .catch((err) => console.log(err));
        
  
